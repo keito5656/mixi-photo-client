@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>クラス MixiConfig</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス MixiConfig</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="MixiConfig" -->
+<p>APIの設定を保持するクラス  
+ <a href="interface_mixi_config.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_mixi_config_8h_source.html">MixiConfig.h</a>&gt;</code></p>
+
+<p><a href="class_mixi_config-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_config.html#a210a34786b56ae79e8e96cf09cb3e59f">initWithType:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプを指定して設定を初期化  <a href="#a210a34786b56ae79e8e96cf09cb3e59f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_config.html#a8ff51c6ce4a4621495f94ae6fc75d7c9">initWithType:clientId:secret:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプとOAuthクライアントIDとシークレットを指定して設定を初期化  <a href="#a8ff51c6ce4a4621495f94ae6fc75d7c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_config.html#ab5706973399d3e44cd733bc066404f93">initWithType:clientId:secret:redirectUrl:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプとOAuthクライアントIDとシークレットを指定して設定を初期化  <a href="#ab5706973399d3e44cd733bc066404f93"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_config.html#aa71aae9e5bb59161d5a5a9f11483c9b4">isReady</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">必要な設定がすべて準備できているかどうか  <a href="#aa71aae9e5bb59161d5a5a9f11483c9b4"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_config.html#a596dfc77d49a3de1b512e479ce220dd8">configWithType:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプを指定して設定を生成  <a href="#a596dfc77d49a3de1b512e479ce220dd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_config.html#a48c8586ef69d3d613ac4b2a9d14f4f0d">configWithType:clientId:secret:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプとOAuthクライアントIDとシークレットを指定して設定を生成  <a href="#a48c8586ef69d3d613ac4b2a9d14f4f0d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_config.html#a5b84372d14a823cb1bb7c1c62094c4bb">configWithType:clientId:secret:redirectUrl:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプとOAuthクライアントIDとシークレットとリダイレクトURLを指定して設定を生成  <a href="#a5b84372d14a823cb1bb7c1c62094c4bb"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8a917e5e314ec8ba79f11cc51cc13a7"></a><!-- doxytag: member="MixiConfig::clientId" ref="ac8a917e5e314ec8ba79f11cc51cc13a7" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>clientId</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a875418f01508f7e9bd45359b92ddb4c4"></a><!-- doxytag: member="MixiConfig::secret" ref="a875418f01508f7e9bd45359b92ddb4c4" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>secret</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86332a8ea60b1e427d4eab358111601a"></a><!-- doxytag: member="MixiConfig::selectorType" ref="a86332a8ea60b1e427d4eab358111601a" args="" -->
+<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selectorType</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af37076fa8577003766e3a216c8c8f813"></a><!-- doxytag: member="MixiConfig::redirectUrl" ref="af37076fa8577003766e3a216c8c8f813" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>redirectUrl</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac65a009b45c6fa04b25bf7bb7e65aa3a"></a><!-- doxytag: member="MixiConfig::version" ref="ac65a009b45c6fa04b25bf7bb7e65aa3a" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>version</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47a3e9c2553ca83429f2e759a2b9fb3f"></a><!-- doxytag: member="MixiConfig::pbkey" ref="a47a3e9c2553ca83429f2e759a2b9fb3f" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>pbkey</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7424319d7946c688c8a23fc24f82a97"></a><!-- doxytag: member="MixiConfig::urlScheme" ref="ad7424319d7946c688c8a23fc24f82a97" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>urlScheme</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>APIの設定を保持するクラス </p>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="a596dfc77d49a3de1b512e479ce220dd8"></a><!-- doxytag: member="MixiConfig::configWithType:" ref="a596dfc77d49a3de1b512e479ce220dd8" args="(MixiApiType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) configWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプを指定して設定を生成 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48c8586ef69d3d613ac4b2a9d14f4f0d"></a><!-- doxytag: member="MixiConfig::configWithType:clientId:secret:" ref="a48c8586ef69d3d613ac4b2a9d14f4f0d" args="(MixiApiType type,[clientId] NSString *cid,[secret] NSString *secret)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) configWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">clientId:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>cid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">secret:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプとOAuthクライアントIDとシークレットを指定して設定を生成 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+    <tr><td class="paramname">id</td><td>OAuthクライアントID </td></tr>
+    <tr><td class="paramname">secret</td><td>OAuthクライアントシークレット </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b84372d14a823cb1bb7c1c62094c4bb"></a><!-- doxytag: member="MixiConfig::configWithType:clientId:secret:redirectUrl:" ref="a5b84372d14a823cb1bb7c1c62094c4bb" args="(MixiApiType type,[clientId] NSString *cid,[secret] NSString *secret,[redirectUrl] NSString *redirectUrl)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) configWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">clientId:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>cid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">secret:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>secret</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">redirectUrl:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプとOAuthクライアントIDとシークレットとリダイレクトURLを指定して設定を生成 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+    <tr><td class="paramname">id</td><td>OAuthクライアントID </td></tr>
+    <tr><td class="paramname">secret</td><td>OAuthクライアントシークレット </td></tr>
+    <tr><td class="paramname">redirectUrl</td><td>リダイレクトURL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a210a34786b56ae79e8e96cf09cb3e59f"></a><!-- doxytag: member="MixiConfig::initWithType:" ref="a210a34786b56ae79e8e96cf09cb3e59f" args="(MixiApiType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプを指定して設定を初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ff51c6ce4a4621495f94ae6fc75d7c9"></a><!-- doxytag: member="MixiConfig::initWithType:clientId:secret:" ref="a8ff51c6ce4a4621495f94ae6fc75d7c9" args="(MixiApiType type,[clientId] NSString *id,[secret] NSString *secret)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">clientId:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>id</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">secret:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプとOAuthクライアントIDとシークレットを指定して設定を初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+    <tr><td class="paramname">id</td><td>OAuthクライアントID </td></tr>
+    <tr><td class="paramname">secret</td><td>OAuthクライアントシークレット </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab5706973399d3e44cd733bc066404f93"></a><!-- doxytag: member="MixiConfig::initWithType:clientId:secret:redirectUrl:" ref="ab5706973399d3e44cd733bc066404f93" args="(MixiApiType type,[clientId] NSString *id,[secret] NSString *secret,[redirectUrl] NSString *redirectUrl)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_mixi_api_type_8h.html#ad4110f202fe3e2f2035caf7e01694889">MixiApiType</a>)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">clientId:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>id</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">secret:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>secret</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">redirectUrl:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>タイプとOAuthクライアントIDとシークレットを指定して設定を初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>kMixiApiTypeSelectorMixiAppまたはkMixiApiTypeSelectorGraphApi </td></tr>
+    <tr><td class="paramname">id</td><td>OAuthクライアントID </td></tr>
+    <tr><td class="paramname">secret</td><td>OAuthクライアントシークレット </td></tr>
+    <tr><td class="paramname">redirectUrl</td><td>リダイレクトURL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MixiConfigインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa71aae9e5bb59161d5a5a9f11483c9b4"></a><!-- doxytag: member="MixiConfig::isReady" ref="aa71aae9e5bb59161d5a5a9f11483c9b4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isReady </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>必要な設定がすべて準備できているかどうか </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>必要な設定がすべて準備できているかどうか </dd></dl>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Config/<a class="el" href="_mixi_config_8h_source.html">MixiConfig.h</a></li>
+<li>Config/MixiConfig.m</li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:04に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

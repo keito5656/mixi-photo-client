@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Networking/MixiDelegate.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Networking/MixiDelegate.h</div>  </div>
+</div>
+<div class="contents">
+<a href="_mixi_delegate_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">@class</span> <a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>;
+<a name="l00012"></a>00012 
+<a name="l00018"></a><a class="code" href="protocol_mixi_delegate-p.html">00018</a> <span class="keyword">@protocol </span><a class="code" href="protocol_mixi_delegate-p.html" title="mixi API実行結果処理用のデリゲート">MixiDelegate</a> &lt;NSObject&gt;
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">@optional</span>
+<a name="l00021"></a>00021 
+<a name="l00030"></a>00030 - (void)mixi:(<a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>*)mixi didFinishLoading:(NSString*)data;
+<a name="l00031"></a>00031 
+<a name="l00038"></a>00038 - (void)mixi:(<a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>*)mixi didSuccessWithJson:(<span class="keywordtype">id</span>)data;
+<a name="l00039"></a>00039 
+<a name="l00046"></a>00046 - (void)mixi:(<a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>*)mixi didCancelWithConnection:(NSURLConnection*)connection;
+<a name="l00047"></a>00047 
+<a name="l00055"></a>00055 - (void)mixi:(<a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>*)mixi didFailWithConnection:(NSURLConnection*)connection error:(NSError*)error;
+<a name="l00056"></a>00056 
+<a name="l00063"></a>00063 - (void)mixi:(<a class="code" href="interface_mixi.html" title="SDKのメインクラス">Mixi</a>*)mixi didFailWithError:(NSError*)error;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 
+<a name="l00073"></a>00073 - (BOOL)<a class="code" href="protocol_mixi_delegate-p.html#ac1a2990a3ad50124306ad92acd011772" title="空のレスポンスを許すかどうか">allowBlankResponse</a>;
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 <span class="keyword">@end</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:03に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

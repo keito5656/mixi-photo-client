@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>クラス MixiSDKAuthorizer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#pro-attribs">Protected 変数</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス MixiSDKAuthorizer</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="MixiSDKAuthorizer" --><!-- doxytag: inherits="MixiAuthorizer,MixiDelegate-p" -->
+<p>Graph APIの場合に、SDK自身で認可を実行するクラス  
+ <a href="interface_mixi_s_d_k_authorizer.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_mixi_s_d_k_authorizer_8h_source.html">MixiSDKAuthorizer.h</a>&gt;</code></p>
+<div class="dynheader">
+MixiSDKAuthorizerに対する継承グラフ</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_mixi_s_d_k_authorizer.png" usemap="#MixiSDKAuthorizer_map" alt=""/>
+  <map id="MixiSDKAuthorizer_map" name="MixiSDKAuthorizer_map">
+<area href="interface_mixi_authorizer.html" title="認可処理を実行するクラスの抽象親クラス" alt="MixiAuthorizer" shape="rect" coords="0,0,119,24"/>
+<area href="protocol_mixi_delegate-p.html" title="mixi API実行結果処理用のデリゲート" alt="&lt;MixiDelegate&gt;" shape="rect" coords="129,0,248,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_mixi_s_d_k_authorizer-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#a07d6b2c6a69dce6f23ce94068cff991a">init</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a07d6b2c6a69dce6f23ce94068cff991a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#aaa180227325de3230985cb5768b13fa8">initWithParentViewController:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">親ビューコントローラを指定して初期化  <a href="#aaa180227325de3230985cb5768b13fa8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#a820801277b268c02c69b0bf8337540fa">initWithRedirectUrl:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">リダイレクトURLを指定して初期化  <a href="#a820801277b268c02c69b0bf8337540fa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#a5a67af4ca69773f502a477feaad9b2a5">initWithRedirectUrl:parentViewController:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">リダイレクトURLと親ビューコントローラを指定して初期化  <a href="#a5a67af4ca69773f502a477feaad9b2a5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_mixi_web_view_controller.html">MixiWebViewController</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#a0bddedbee193911d074abb494462d337">authorizerViewController:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認可用ビューコントローラ取得  <a href="#a0bddedbee193911d074abb494462d337"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_mixi_web_view_controller.html">MixiWebViewController</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_s_d_k_authorizer.html#a189db53eb62393e502b9a5a7df15af92">revokerViewControllerWithError:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認可解除用ビューコントローラ取得  <a href="#a189db53eb62393e502b9a5a7df15af92"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_s_d_k_authorizer.html#a9b42481397a1a7fab3dc612266288ff8">authorizer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトのリダイレクトURLを使用してインスタンスを取得  <a href="#a9b42481397a1a7fab3dc612266288ff8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_s_d_k_authorizer.html#add79b3146739baaf59cea189218f8835">authorizerWithParentViewController:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">親ビューコントローラを指定してインスタンスを取得  <a href="#add79b3146739baaf59cea189218f8835"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_s_d_k_authorizer.html#a4c5dfa311b1bc6886e5290fc0c940dd7">authorizerWithRedirectUrl:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">リダイレクトURLを指定してインスタンスを取得  <a href="#a4c5dfa311b1bc6886e5290fc0c940dd7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_s_d_k_authorizer.html#ad1bc4b1dfca15b0dfed2819e3813eadb">authorizerWithRedirectUrl:parentViewController:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">リダイレクトURLと親ビューコントローラを指定してインスタンスを取得  <a href="#ad1bc4b1dfca15b0dfed2819e3813eadb"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e78be887ec050ff58054e964a58e0d3"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizerDelegate_" ref="a8e78be887ec050ff58054e964a58e0d3" args="" -->
+id&lt; <a class="el" href="protocol_mixi_s_d_k_authorizer_delegate-p.html">MixiSDKAuthorizerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_s_d_k_authorizer.html#a8e78be887ec050ff58054e964a58e0d3">authorizerDelegate_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認可結果を受け取るデリゲート <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b02f94864798560b4f5c5be6afd2df"></a><!-- doxytag: member="MixiSDKAuthorizer::parentViewController_" ref="a48b02f94864798560b4f5c5be6afd2df" args="" -->
+UIViewController *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_s_d_k_authorizer.html#a48b02f94864798560b4f5c5be6afd2df">parentViewController_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認可画面の親ビューコントローラ <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac71648238cd6258ba66aaeaf7ecb5ffa"></a><!-- doxytag: member="MixiSDKAuthorizer::redirectUrl_" ref="ac71648238cd6258ba66aaeaf7ecb5ffa" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_s_d_k_authorizer.html#ac71648238cd6258ba66aaeaf7ecb5ffa">redirectUrl_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">結果取得用リダイレクトURL <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591d2c6022f79eaa08b97353eb493a3a"></a><!-- doxytag: member="MixiSDKAuthorizer::toolbarColor_" ref="a591d2c6022f79eaa08b97353eb493a3a" args="" -->
+UIColor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_s_d_k_authorizer.html#a591d2c6022f79eaa08b97353eb493a3a">toolbarColor_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ツールバーの色 <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad65be97e6cfcf82b70a0b0996d9a374c"></a><!-- doxytag: member="MixiSDKAuthorizer::authUrl_" ref="ad65be97e6cfcf82b70a0b0996d9a374c" args="" -->
+NSURL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_s_d_k_authorizer.html#ad65be97e6cfcf82b70a0b0996d9a374c">authUrl_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認可に使用するURL <br/></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cf49a2eeb87923974e2007231c352cf"></a><!-- doxytag: member="MixiSDKAuthorizer::delegate" ref="a2cf49a2eeb87923974e2007231c352cf" args="" -->
+id&lt; <a class="el" href="protocol_mixi_s_d_k_authorizer_delegate-p.html">MixiSDKAuthorizerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4718775b2e91d3b75b14c601d9293b7c"></a><!-- doxytag: member="MixiSDKAuthorizer::parentViewController" ref="a4718775b2e91d3b75b14c601d9293b7c" args="" -->
+UIViewController *&#160;</td><td class="memItemRight" valign="bottom"><b>parentViewController</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef84bacac80449535093227e4f091c22"></a><!-- doxytag: member="MixiSDKAuthorizer::redirectUrl" ref="aef84bacac80449535093227e4f091c22" args="" -->
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>redirectUrl</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a209a112f24fc06297805348a44cf480d"></a><!-- doxytag: member="MixiSDKAuthorizer::toolbarColor" ref="a209a112f24fc06297805348a44cf480d" args="" -->
+UIColor *&#160;</td><td class="memItemRight" valign="bottom"><b>toolbarColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4478fa3c73e034f5bac1c1257477e35a"></a><!-- doxytag: member="MixiSDKAuthorizer::authUrl" ref="a4478fa3c73e034f5bac1c1257477e35a" args="" -->
+NSURL *&#160;</td><td class="memItemRight" valign="bottom"><b>authUrl</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>Graph APIの場合に、SDK自身で認可を実行するクラス </p>
+<p><b>注：本クラスはmixiアプリには利用できません。mixiアプリの場合は <a class="el" href="interface_mixi_app_authorizer.html" title="mixi公式iPhoneアプリを使用して認可を実行するクラス">MixiAppAuthorizer</a> を使用してmixi公式iPhoneアプリ経由で認可を実行してください。</b> </p>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="a9b42481397a1a7fab3dc612266288ff8"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizer" ref="a9b42481397a1a7fab3dc612266288ff8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) authorizer </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>デフォルトのリダイレクトURLを使用してインスタンスを取得 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+<p><a class="el" href="interface_mixi_authorizer.html#a6d2397b6b627ba0d18fbb1fe11ab90f9">MixiAuthorizer</a>を再定義しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bddedbee193911d074abb494462d337"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizerViewController:" ref="a0bddedbee193911d074abb494462d337" args="(NSArray *permissions)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_mixi_web_view_controller.html">MixiWebViewController</a>*) authorizerViewController: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>permissions</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認可用ビューコントローラ取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">permissions</td><td>取得するスコープ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>認可用ビューコントローラ </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="add79b3146739baaf59cea189218f8835"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizerWithParentViewController:" ref="add79b3146739baaf59cea189218f8835" args="(UIViewController *parentViewController)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) authorizerWithParentViewController: </td>
+          <td></td>
+          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramname"><em>parentViewController</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>親ビューコントローラを指定してインスタンスを取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parentViewController</td><td>認可画面を表示するウェブビューコントローラの親ビューコントローラ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c5dfa311b1bc6886e5290fc0c940dd7"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizerWithRedirectUrl:" ref="a4c5dfa311b1bc6886e5290fc0c940dd7" args="(NSString *redirectUrl)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) authorizerWithRedirectUrl: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>リダイレクトURLを指定してインスタンスを取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">redirectUrl</td><td>sap.mixi.jpでアプリケーションに設定したリダイレクトURL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1bc4b1dfca15b0dfed2819e3813eadb"></a><!-- doxytag: member="MixiSDKAuthorizer::authorizerWithRedirectUrl:parentViewController:" ref="ad1bc4b1dfca15b0dfed2819e3813eadb" args="(NSString *redirectUrl,[parentViewController] UIViewController *parentViewController)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) authorizerWithRedirectUrl: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">parentViewController:</td>
+          <td></td>
+          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramname"><em>parentViewController</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>リダイレクトURLと親ビューコントローラを指定してインスタンスを取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">redirectUrl</td><td>sap.mixi.jpでアプリケーションに設定したリダイレクトURL </td></tr>
+    <tr><td class="paramname">parentViewController</td><td>認可画面を表示するウェブビューコントローラの親ビューコントローラ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a07d6b2c6a69dce6f23ce94068cff991a"></a><!-- doxytag: member="MixiSDKAuthorizer::init" ref="a07d6b2c6a69dce6f23ce94068cff991a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) init </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>初期化 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa180227325de3230985cb5768b13fa8"></a><!-- doxytag: member="MixiSDKAuthorizer::initWithParentViewController:" ref="aaa180227325de3230985cb5768b13fa8" args="(UIViewController *parentViewController)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithParentViewController: </td>
+          <td></td>
+          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramname"><em>parentViewController</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>親ビューコントローラを指定して初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parentViewController</td><td>認可画面を表示するウェブビューコントローラの親ビューコントローラ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a820801277b268c02c69b0bf8337540fa"></a><!-- doxytag: member="MixiSDKAuthorizer::initWithRedirectUrl:" ref="a820801277b268c02c69b0bf8337540fa" args="(NSString *redirectUrl)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithRedirectUrl: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>リダイレクトURLを指定して初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">redirectUrl</td><td>sap.mixi.jpでアプリケーションに設定したリダイレクトURL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5a67af4ca69773f502a477feaad9b2a5"></a><!-- doxytag: member="MixiSDKAuthorizer::initWithRedirectUrl:parentViewController:" ref="a5a67af4ca69773f502a477feaad9b2a5" args="(NSString *redirectUrl,[parentViewController] UIViewController *parentViewController)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithRedirectUrl: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>redirectUrl</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">parentViewController:</td>
+          <td></td>
+          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramname"><em>parentViewController</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>リダイレクトURLと親ビューコントローラを指定して初期化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">redirectUrl</td><td>sap.mixi.jpでアプリケーションに設定したリダイレクトURL </td></tr>
+    <tr><td class="paramname">parentViewController</td><td>認可画面を表示するウェブビューコントローラの親ビューコントローラ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a189db53eb62393e502b9a5a7df15af92"></a><!-- doxytag: member="MixiSDKAuthorizer::revokerViewControllerWithError:" ref="a189db53eb62393e502b9a5a7df15af92" args="(NSError **error)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_mixi_web_view_controller.html">MixiWebViewController</a>*) revokerViewControllerWithError: </td>
+          <td></td>
+          <td class="paramtype">(NSError **)&#160;</td>
+          <td class="paramname"><em>error</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認可解除用ビューコントローラ取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>エラー </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>認可解除用ビューコントローラ </dd></dl>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Authorize/<a class="el" href="_mixi_s_d_k_authorizer_8h_source.html">MixiSDKAuthorizer.h</a></li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:04に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

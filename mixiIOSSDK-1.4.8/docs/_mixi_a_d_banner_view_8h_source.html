@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>View/MixiADBannerView.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">View/MixiADBannerView.h</div>  </div>
+</div>
+<div class="contents">
+<a href="_mixi_a_d_banner_view_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#import &quot;<a class="code" href="_mixi_reporter_8h.html" title="UU測定APIを実行するクラスを定義します。">MixiReporter.h</a>&quot;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="preprocessor">#define kMixiADBannerContentSizeIdentifierPortrait 1</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define kMixiADBannerContentSizeIdentifierLandscape 2</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="interface_mixi_a_d_banner_view.html">00027</a> <span class="keyword">@interface </span><a class="code" href="interface_mixi_a_d_banner_view.html" title="mixi Ad Programビュークラス">MixiADBannerView</a> : UIView {
+<a name="l00029"></a><a class="code" href="interface_mixi_a_d_banner_view.html#a41b4cd1df931041d433d5fbf2d68d8cc">00029</a>     <span class="keywordtype">int</span> <a class="code" href="interface_mixi_a_d_banner_view.html#a41b4cd1df931041d433d5fbf2d68d8cc" title="現在のビューの向き">currentContentSizeIdentifier_</a>;
+<a name="l00030"></a>00030     
+<a name="l00036"></a><a class="code" href="interface_mixi_a_d_banner_view.html#a6b4507a53218f088f043ce5500159c35">00036</a>     BOOL <a class="code" href="interface_mixi_a_d_banner_view.html#a6b4507a53218f088f043ce5500159c35" title="デバイスの向きに応じて表示を変更するかどうか">useOrientation_</a>;
+<a name="l00037"></a>00037     
+<a name="l00039"></a><a class="code" href="interface_mixi_a_d_banner_view.html#a00f413ec5f6d56690263fbdf5b3ca43e">00039</a>     <a class="code" href="interface_mixi_reporter.html" title="UU測定APIを実行するクラス">MixiReporter</a> *<a class="code" href="interface_mixi_a_d_banner_view.html#a00f413ec5f6d56690263fbdf5b3ca43e" title="mAPレポーター">mapReporter_</a>;
+<a name="l00040"></a>00040 }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">int</span> currentContentSizeIdentifier;
+<a name="l00043"></a>00043 <span class="keyword">@property</span> (nonatomic, assign) BOOL useOrientation;
+<a name="l00044"></a>00044 <span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">int</span> orientation;
+<a name="l00045"></a>00045 <span class="keyword">@property</span> (nonatomic, retain) <a class="code" href="interface_mixi_reporter.html" title="UU測定APIを実行するクラス">MixiReporter</a> *mapReporter;
+<a name="l00046"></a>00046 
+<a name="l00052"></a>00052 + (<a class="code" href="interface_mixi_a_d_banner_view.html" title="mixi Ad Programビュークラス">MixiADBannerView</a>*)sharedView;
+<a name="l00053"></a>00053 
+<a name="l00057"></a>00057 - (void)addOnTop;
+<a name="l00058"></a>00058 
+<a name="l00064"></a>00064 - (void)addOn:(UIView*)view;
+<a name="l00065"></a>00065 
+<a name="l00067"></a>00067 <span class="comment">/* ウィンドウのルートビューのサイズを調節 */</span>
+<a name="l00068"></a>00068 - (void)arrange;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="comment">/* 指定されたビューのサイズを調節 */</span>
+<a name="l00071"></a>00071 - (void)arrangeOn:(UIView*)view;
+<a name="l00074"></a>00074 <span class="keyword">@end</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:03に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

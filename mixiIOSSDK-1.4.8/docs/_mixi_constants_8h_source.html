@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Config/MixiConstants.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Config/MixiConstants.h</div>  </div>
+</div>
+<div class="contents">
+<a href="_mixi_constants_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="_mixi_error_codes_8h.html" title="エラーコードを定義します。">MixiErrorCodes.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00012"></a>00012 <span class="comment">//#define DEV</span>
+<a name="l00013"></a>00013 <span class="comment">//#define STAGING</span>
+<a name="l00014"></a>00014 <span class="comment">//__END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00015"></a>00015 
+<a name="l00017"></a><a class="code" href="_mixi_constants_8h.html#a710919856840dfbece9ed2b7097f3003">00017</a> <span class="preprocessor">#define kMixiSDKVersion @&quot;1.4.7&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00020"></a><a class="code" href="_mixi_constants_8h.html#a1c9f83e181b491695c8c33412c8b3171">00020</a> <span class="preprocessor">#define kMixiApplicationId @&quot;jp.co.mixi.iphone&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00023"></a><a class="code" href="_mixi_constants_8h.html#a8e11596911a48608e79f5b02c0e2d3f7">00023</a> <span class="preprocessor">#define kMixiAppScheme @&quot;mixi-connect&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span>
+<a name="l00026"></a><a class="code" href="_mixi_constants_8h.html#a1fa40a1a524a36436a02ac91eea71595">00026</a> <span class="preprocessor">#define kMixiDefaultRedirectUrl (kMixiAppScheme @&quot;://success&quot;)</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>
+<a name="l00029"></a><a class="code" href="_mixi_constants_8h.html#a71cdc3e41a510ca28ab9348a682c8f1f">00029</a> <span class="preprocessor">#define kMixiAppTokenUri (kMixiAppScheme @&quot;://token&quot;)</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00032"></a><a class="code" href="_mixi_constants_8h.html#a10f9e682bfb3a6c8812adacc3990e366">00032</a> <span class="preprocessor">#define kMixiAppRevokeUri (kMixiAppScheme @&quot;://revoke&quot;)</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span>
+<a name="l00035"></a><a class="code" href="_mixi_constants_8h.html#aaf4f0f631a7da407a7fd5653dd18d513">00035</a> <span class="preprocessor">#define kMixiAppErrorUri (kMixiAppScheme @&quot;://error&quot;)</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span>
+<a name="l00038"></a><a class="code" href="_mixi_constants_8h.html#a8f27206dc91afa5b9aabe900635b4f1d">00038</a> <span class="preprocessor">#define kMixiAppCancelUri (kMixiAppScheme @&quot;://cancel&quot;)</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>
+<a name="l00041"></a><a class="code" href="_mixi_constants_8h.html#adbb91718761fa95474a6449b89f623cd">00041</a> <span class="preprocessor">#define kMixiAppApiTypeToken @&quot;token&quot;</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00044"></a><a class="code" href="_mixi_constants_8h.html#af257c3f3bc45c79ed75ba866ec5b7d21">00044</a> <span class="preprocessor">#define kMixiAppApiTypeRevoke @&quot;revoke&quot;</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00047"></a><a class="code" href="_mixi_constants_8h.html#af5698c6bbeb985769ad4492ae01879d5">00047</a> <span class="preprocessor">#define kMixiAppApiTypeReceiveRequest @&quot;request&quot;</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span>
+<a name="l00050"></a><a class="code" href="_mixi_constants_8h.html#a83e5c9ec530e0118b53d95f1cbffc0db">00050</a> <span class="preprocessor">#define kMixiSDKClientIdKey @&quot;key&quot;</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span>
+<a name="l00053"></a><a class="code" href="_mixi_constants_8h.html#a4923fc062704b293281658aa55a164d0">00053</a> <span class="preprocessor">#define kMixiSDKPermissionsKey @&quot;permissions&quot;</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span>
+<a name="l00056"></a><a class="code" href="_mixi_constants_8h.html#af213eaa8535925b6c884303cad63aead">00056</a> <span class="preprocessor">#define kMixiSDKReturnSchemeKey @&quot;return_scheme&quot;</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span>
+<a name="l00059"></a><a class="code" href="_mixi_constants_8h.html#a75728d8c1123c0169f78510555937e79">00059</a> <span class="preprocessor">#define kMixiSDKTokenKey @&quot;token&quot;</span>
+<a name="l00060"></a>00060 <span class="preprocessor"></span>
+<a name="l00062"></a>00062 <span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00063"></a>00063 <span class="preprocessor">#ifdef DEV</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiApiBaseUrl @&quot;http://api.mixi-platform.com.dvm108.lo.mixi.jp:18000/2&quot;</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span><span class="preprocessor">#elif defined (STAGING)</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span><span class="comment">//#  define kMixiApiBaseUrl @&quot;http://hx4y-3233-vm01.st.mixi.jp/2&quot;</span>
+<a name="l00067"></a>00067 <span class="comment">//#  define kMixiApiBaseUrl @&quot;http://cx4z-1846-vm01.st.mixi.jp/2&quot;</span>
+<a name="l00068"></a>00068 <span class="preprocessor">#  define kMixiApiBaseUrl @&quot;http://hx4y-3233-vm01.st.mixi.jp/2&quot;</span>
+<a name="l00069"></a>00069 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00070"></a>00070 <span class="preprocessor"></span><span class="comment">// __END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00071"></a><a class="code" href="_mixi_constants_8h.html#a578eb0abc0aebcf3b1e251c998fe824e">00071</a> <span class="preprocessor">#  define kMixiApiBaseUrl @&quot;http://api.mixi-platform.com/2&quot;</span>
+<a name="l00072"></a>00072 <span class="preprocessor"></span><span class="comment">// __START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00073"></a>00073 <span class="preprocessor">#endif</span>
+<a name="l00074"></a>00074 <span class="preprocessor"></span><span class="comment">//__END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00075"></a>00075 
+<a name="l00077"></a>00077 <span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00078"></a>00078 <span class="preprocessor">#ifdef DEV</span>
+<a name="l00079"></a>00079 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiApiRefreshTokenEndpoint (kMixiApiBaseUrl @&quot;/token&quot;)</span>
+<a name="l00080"></a>00080 <span class="preprocessor"></span><span class="preprocessor">#elif defined (STAGING)</span>
+<a name="l00081"></a>00081 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiApiRefreshTokenEndpoint (kMixiApiBaseUrl @&quot;/token&quot;)</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00083"></a>00083 <span class="preprocessor"></span><span class="comment">// __END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00084"></a><a class="code" href="_mixi_constants_8h.html#a7002b6e5f0753f8878ecff71c29de18d">00084</a> <span class="preprocessor">#  define kMixiApiRefreshTokenEndpoint @&quot;https://secure.mixi-platform.com/2/token&quot;</span>
+<a name="l00085"></a>00085 <span class="preprocessor"></span><span class="comment">// __START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00086"></a>00086 <span class="preprocessor">#endif</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="comment">//__END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00088"></a>00088 
+<a name="l00090"></a><a class="code" href="_mixi_constants_8h.html#a5df4d91a1b3777f8815b31b13ad08e7f">00090</a> <span class="preprocessor">#define kMixiApiTokenEndpoint @&quot;/token&quot;</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span>
+<a name="l00093"></a><a class="code" href="_mixi_constants_8h.html#afbbbdbc9994e9fbcda945003a2f92667">00093</a> <span class="preprocessor">#define kMixiApiRevokeEndpoint @&quot;/authorize/revoke&quot;</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span>
+<a name="l00096"></a><a class="code" href="_mixi_constants_8h.html#a89156ca59d72535325b92dac4eb1ebe6">00096</a> <span class="preprocessor">#define kMixiApiUnknownEndpoint @&quot;[unknown]&quot;</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span>
+<a name="l00099"></a><a class="code" href="_mixi_constants_8h.html#ac918446269c582565f9c44f074d89783">00099</a> <span class="preprocessor">#define kMixiApiPingEndpoint @&quot;/apps/user/count/all&quot;</span>
+<a name="l00100"></a>00100 <span class="preprocessor"></span>
+<a name="l00102"></a><a class="code" href="_mixi_constants_8h.html#a9ef236282e01729171940ce521be9409">00102</a> <span class="preprocessor">#define kMixiApiMapEndpoint @&quot;/apps/user/count&quot;</span>
+<a name="l00103"></a>00103 <span class="preprocessor"></span>
+<a name="l00109"></a><a class="code" href="_mixi_constants_8h.html#a387347673e458c2ddfdc2dd75eeb6aae">00109</a> <span class="preprocessor">#define kMixiSDKUserAgentPrefix (@&quot;mixi-phone-ios/&quot; kMixiSDKVersion)</span>
+<a name="l00110"></a>00110 <span class="preprocessor"></span>
+<a name="l00112"></a><a class="code" href="_mixi_constants_8h.html#a8e5416d64b49bb9ef03b16fbf428c24b">00112</a> <span class="preprocessor">#define kMixiSDKKeychainIdentifier @&quot;kMixiSDKKeychainIdentifier&quot;</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span>
+<a name="l00115"></a>00115 <span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00116"></a>00116 <span class="preprocessor">#ifdef STAGING</span>
+<a name="l00117"></a>00117 <span class="preprocessor"></span><span class="comment">//#  define kMixiOfficialAppDownloadURL [NSURL URLWithString:@&quot;http://a04635-vm05.st.mixi.jp/official_app_introduction.pl&quot;]</span>
+<a name="l00118"></a>00118 <span class="comment">//#  define kMixiOfficialAppDownloadURL [NSURL URLWithString:@&quot;http://cx4z-1854-vm01.st.mixi.jp/official_app_introduction.pl&quot;]</span>
+<a name="l00119"></a>00119 <span class="preprocessor">#  define kMixiOfficialAppDownloadURL [NSURL URLWithString:@&quot;http://hx4y-3231-vm02.st.mixi.jp/official_app_introduction.pl&quot;]</span>
+<a name="l00120"></a>00120 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00121"></a>00121 <span class="preprocessor"></span><span class="comment">// __END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00122"></a><a class="code" href="_mixi_constants_8h.html#afd971be81989225620f2867f5c49c005">00122</a> <span class="preprocessor">#  define kMixiOfficialAppDownloadURL [NSURL URLWithString:@&quot;http://mixi.jp/official_app_introduction.pl&quot;]</span>
+<a name="l00123"></a>00123 <span class="preprocessor"></span><span class="comment">// __START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00124"></a>00124 <span class="preprocessor">#endif</span>
+<a name="l00125"></a>00125 <span class="preprocessor"></span><span class="comment">//__END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 <span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00128"></a>00128 <span class="preprocessor">#ifdef DEV</span>
+<a name="l00129"></a>00129 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiConnectAuthorizeURL @&quot;http://dvm108.lo.mixi.jp:18000/connect_authorize.pl&quot;</span>
+<a name="l00130"></a>00130 <span class="preprocessor"></span><span class="preprocessor">#elif defined (STAGING)</span>
+<a name="l00131"></a>00131 <span class="preprocessor"></span><span class="comment">//#  define kMixiConnectAuthorizeURL @&quot;http://a04635-vm05.st.mixi.jp/connect_authorize.pl&quot;</span>
+<a name="l00132"></a>00132 <span class="comment">//#  define kMixiConnectAuthorizeURL @&quot;http://cx4z-1854-vm01.st.mixi.jp/connect_authorize.pl&quot;</span>
+<a name="l00133"></a>00133 <span class="comment">//#  define kMixiConnectAuthorizeURL @&quot;http://cx4z-1850-vm08.st.mixi.jp/connect_authorize.pl&quot;</span>
+<a name="l00134"></a>00134 <span class="comment">//#  define kMixiViewAppliURL @&quot;http://cx4z-1850-vm08.st.mixi.jp/view_appli.pl&quot;</span>
+<a name="l00135"></a>00135 <span class="preprocessor">#  define kMixiConnectAuthorizeURL @&quot;http://hx4y-3231-vm02.st.mixi.jp/connect_authorize.pl&quot;</span>
+<a name="l00136"></a>00136 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiViewAppliURL @&quot;http://hx4y-3231-vm02.st.mixi.jp/view_appli.pl&quot;</span>
+<a name="l00137"></a>00137 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00138"></a>00138 <span class="preprocessor"></span><span class="comment">// __END__REMOVE_WHEN_RELEASED__</span>
+<a name="l00139"></a>00139 <span class="preprocessor">#  define kMixiConnectAuthorizeURL @&quot;https://mixi.jp/connect_authorize.pl&quot;</span>
+<a name="l00140"></a>00140 <span class="preprocessor"></span><span class="preprocessor">#  define kMixiViewAppliURL @&quot;http://mixi.jp/view_appli.pl&quot;</span>
+<a name="l00141"></a>00141 <span class="preprocessor"></span><span class="comment">//__START__REMOVE_WHEN_RELEASED__</span>
+<a name="l00142"></a>00142 <span class="preprocessor">#endif</span>
+<a name="l00143"></a>00143 <span class="preprocessor"></span><span class="comment">//__END__REMOVE_WHEN_RELEASED__</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:03に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

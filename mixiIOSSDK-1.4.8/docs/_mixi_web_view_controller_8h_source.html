@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>ViewController/MixiWebViewController.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">ViewController/MixiWebViewController.h</div>  </div>
+</div>
+<div class="contents">
+<a href="_mixi_web_view_controller_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">@protocol </span><a class="code" href="protocol_mixi_orientation_delegate-p.html" title="デバイスの向きの変更を処理するデリゲート">MixiOrientationDelegate</a>;
+<a name="l00012"></a>00012 
+<a name="l00025"></a><a class="code" href="interface_mixi_web_view_controller.html">00025</a> <span class="keyword">@interface </span><a class="code" href="interface_mixi_web_view_controller.html" title="ウェブビューコントローラ">MixiWebViewController</a> : UIViewController {
+<a name="l00027"></a><a class="code" href="interface_mixi_web_view_controller.html#a9ad4f1876f4a8e7e969656b90ef24d6d">00027</a>     IBOutlet UIToolbar *<a class="code" href="interface_mixi_web_view_controller.html#a9ad4f1876f4a8e7e969656b90ef24d6d" title="ツールバー">toolbar_</a>;
+<a name="l00028"></a>00028     
+<a name="l00030"></a><a class="code" href="interface_mixi_web_view_controller.html#a71e15198d8cfdbc398be566e31d9642d">00030</a>     NSString *<a class="code" href="interface_mixi_web_view_controller.html#a71e15198d8cfdbc398be566e31d9642d" title="タイトル">toolbarTitle_</a>;
+<a name="l00031"></a>00031     
+<a name="l00033"></a><a class="code" href="interface_mixi_web_view_controller.html#af767c66fab7f98c28c2373d6040c950c">00033</a>     UIColor *<a class="code" href="interface_mixi_web_view_controller.html#af767c66fab7f98c28c2373d6040c950c" title="ツールバーの色">toolbarColor_</a>;
+<a name="l00034"></a>00034 
+<a name="l00036"></a><a class="code" href="interface_mixi_web_view_controller.html#a0dbc2cd459c55a7dd10d7f737357ffd8">00036</a>     IBOutlet UIBarButtonItem *<a class="code" href="interface_mixi_web_view_controller.html#a0dbc2cd459c55a7dd10d7f737357ffd8" title="ツールバー上の閉じるボタン">closeButton_</a>;
+<a name="l00037"></a>00037     
+<a name="l00039"></a><a class="code" href="interface_mixi_web_view_controller.html#a245dd368d1b3031b6efade02d969d447">00039</a>     IBOutlet UILabel *<a class="code" href="interface_mixi_web_view_controller.html#a245dd368d1b3031b6efade02d969d447" title="ツールバー上のタイトルラベル">titleLabel_</a>;
+<a name="l00040"></a>00040 
+<a name="l00042"></a><a class="code" href="interface_mixi_web_view_controller.html#afa4de7c7edec0d819a905ddc1b629174">00042</a>     IBOutlet UIWebView *<a class="code" href="interface_mixi_web_view_controller.html#afa4de7c7edec0d819a905ddc1b629174" title="ウェブビュー">webView_</a>;
+<a name="l00043"></a>00043     
+<a name="l00045"></a><a class="code" href="interface_mixi_web_view_controller.html#add0a260ff7ce28d6db28f7f8bfdc215b">00045</a>     IBOutlet UIActivityIndicatorView *<a class="code" href="interface_mixi_web_view_controller.html#add0a260ff7ce28d6db28f7f8bfdc215b" title="アクティビティインディケーター">indicator_</a>;
+<a name="l00046"></a>00046 
+<a name="l00048"></a><a class="code" href="interface_mixi_web_view_controller.html#a654f97aff6c6638cd4a12b7768ebe2ab">00048</a>     NSURL *<a class="code" href="interface_mixi_web_view_controller.html#a654f97aff6c6638cd4a12b7768ebe2ab" title="ウェブビューで表示する画面のURL">url_</a>;
+<a name="l00049"></a>00049     
+<a name="l00051"></a><a class="code" href="interface_mixi_web_view_controller.html#aeca569c303bf49c46d0e8d87e2bd688c">00051</a>     NSString *<a class="code" href="interface_mixi_web_view_controller.html#aeca569c303bf49c46d0e8d87e2bd688c" title="ウェブビューで表示するHTML">html_</a>;
+<a name="l00052"></a>00052 
+<a name="l00054"></a><a class="code" href="interface_mixi_web_view_controller.html#a95dc9c30a8d9577675481489b6a7459b">00054</a>     id&lt;UIWebViewDelegate&gt; <a class="code" href="interface_mixi_web_view_controller.html#a95dc9c30a8d9577675481489b6a7459b" title="ウェブビュー内での閉じるボタン押下を処理するデリゲート">delegate_</a>;
+<a name="l00055"></a>00055     
+<a name="l00057"></a><a class="code" href="interface_mixi_web_view_controller.html#a198be81ad827543b5c935ea66d918ea5">00057</a>     id&lt;MixiOrientationDelegate&gt; <a class="code" href="interface_mixi_web_view_controller.html#a198be81ad827543b5c935ea66d918ea5" title="デバイスの向きに同反応するかを処理するデリゲート">orietationDelegate_</a>;
+<a name="l00058"></a>00058 }
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="keyword">@property</span> (nonatomic, retain) NSURL *url;
+<a name="l00061"></a>00061 <span class="keyword">@property</span> (nonatomic, assign) NSString *html;
+<a name="l00062"></a>00062 <span class="keyword">@property</span> (nonatomic, assign) id&lt;UIWebViewDelegate&gt; delegate;
+<a name="l00063"></a>00063 <span class="keyword">@property</span> (nonatomic, assign) id&lt;MixiOrientationDelegate&gt; orientationDelegate;
+<a name="l00064"></a>00064 <span class="keyword">@property</span> (nonatomic, copy) NSString *toolbarTitle;
+<a name="l00065"></a>00065 <span class="keyword">@property</span> (nonatomic, retain) UIColor *toolbarColor;
+<a name="l00066"></a>00066 <span class="keyword">@property</span> (nonatomic, retain) IBOutlet UIActivityIndicatorView *indicator;
+<a name="l00067"></a>00067 
+<a name="l00073"></a>00073 - (IBAction)close:(<span class="keywordtype">id</span>)sender;
+<a name="l00074"></a>00074 
+<a name="l00081"></a>00081 - (id)initWithURL:(NSURL*)url;
+<a name="l00082"></a>00082 
+<a name="l00090"></a>00090 - (id)initWithURL:(NSURL*)url delegate:(<span class="keywordtype">id</span>&lt;UIWebViewDelegate&gt;)delegate;
+<a name="l00091"></a>00091 
+<a name="l00099"></a>00099 - (id)initWithHTML:(NSString*)html delegate:(<span class="keywordtype">id</span>&lt;UIWebViewDelegate&gt;)delegate;
+<a name="l00100"></a>00100 
+<a name="l00104"></a>00104 - (void)startIndicatorAnimating;
+<a name="l00105"></a>00105 
+<a name="l00109"></a>00109 - (void)stopIndicatorAnimating;
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="keyword">@end</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Thu Oct 4 2012 15:19:03に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>
